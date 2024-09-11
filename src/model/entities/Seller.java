@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Objects;
 
+
 public class Seller implements Serializable {
     private Integer id;
     private String name, email;
