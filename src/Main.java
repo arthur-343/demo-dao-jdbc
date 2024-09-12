@@ -32,13 +32,17 @@ public class Main {
         System.out.println(seller1);
     }
         System.out.println("----------------------------------------------------------------------------");
-        Seller seller1 = new Seller(null, "ars", "ars@", LocalDate.of(2002, 12, 22),2000.0, dep);
-        sellerDao.insert(seller1);
-        System.out.println(seller1);
+//        Seller seller1 = new Seller(null, "ars", "ars@", LocalDate.of(2002, 12, 22),2000.0, dep);
+//        sellerDao.insert(seller1);
+//        System.out.println(seller1);
 
         System.out.println("----------------------------------------------------------------------------");
         se = sellerDao.findById(1);
         se.setName("Bruce Wayne");
         sellerDao.update(se);
         System.out.println("update complete");
+
+        System.out.println("----------------------------------------------------------------------------");
+        sellerDao.deleteById(16);
+        System.out.println("delete complete");
     }}
