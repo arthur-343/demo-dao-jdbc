@@ -35,4 +35,10 @@ public class Main {
         Seller seller1 = new Seller(null, "ars", "ars@", LocalDate.of(2002, 12, 22),2000.0, dep);
         sellerDao.insert(seller1);
         System.out.println(seller1);
-}}
+
+        System.out.println("----------------------------------------------------------------------------");
+        se = sellerDao.findById(1);
+        se.setName("Bruce Wayne");
+        sellerDao.update(se);
+        System.out.println("update complete");
+    }}
