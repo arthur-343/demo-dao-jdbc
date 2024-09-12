@@ -6,6 +6,7 @@ import model.entities.Seller;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 public class Main {
@@ -30,5 +31,8 @@ public class Main {
         for (Seller seller1 : sellerList){
         System.out.println(seller1);
     }
-
+        System.out.println("----------------------------------------------------------------------------");
+        Seller seller1 = new Seller(null, "ars", "ars@", LocalDate.of(2002, 12, 22),2000.0, dep);
+        sellerDao.insert(seller1);
+        System.out.println(seller1);
 }}
